@@ -1,6 +1,6 @@
-# Nuxt 3 Minimal Starter
+# Starter Nuxt 3 Blog
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Esta aplicación se ha creado en la primera clase del curso de Nuxt 3 ➡️ https://escuela.it/cursos/curso-nuxt
 
 ## Setup
 
