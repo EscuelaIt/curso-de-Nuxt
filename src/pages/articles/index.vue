@@ -3,6 +3,7 @@ const posts = await queryContent().find()
 </script>
 
 <template>
+  <section>
   <h1 class="text-3xl font-bold mb-10">Local Articles Page</h1>
   <section class="grid grid-cols-4 gap-10">
     <article
@@ -18,4 +19,5 @@ const posts = await queryContent().find()
       </div>
     </article>
   </section>
+</section>
 </template>
