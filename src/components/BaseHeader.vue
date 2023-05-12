@@ -4,6 +4,7 @@
     <NuxtLink class="mr-2" to="/posts">Posts</NuxtLink>
     <NuxtLink class="mr-2" to="/articles">Local Articles</NuxtLink>
     <NuxtLink to="/users">Users</NuxtLink>
+    <NuxtLink to="/about">About</NuxtLink>
   </header>
 </template>
 

@@ -11,10 +11,12 @@ export default defineNuxtConfig({
     "@": fileURLToPath(new URL('./src/', import.meta.url))
   },
   css: ['@/assets/css/main.css'],
-  tailwindcss: {
-    plugins: [require('daisyui')]
-  },
-  // app: {
-  //   pageTransition: { name: 'page', mode: 'out-in' }
-  // }
+  components: [
+    { path: '@/components', pathPrefix: false },
+    { path: '@/ui/components', prefix: 'Ui' }
+  ],
+  app: {
+    // pageTransition: { name: 'page', mode: 'out-in' }
+    layoutTransition: { name: 'page', mode: 'out-in' }
+  }
 })
