@@ -1,9 +1,9 @@
 <script setup>
-definePageMeta({
-  validate: async (route) => {
-    return /^\d+$/.test(route.params.id)
-  }
-})
+// definePageMeta({
+//   validate: async (route) => {
+//     return /^\d+$/.test(route.params.id)
+//   }
+// })
 </script>
 
 <template>

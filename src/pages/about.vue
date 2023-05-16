@@ -3,10 +3,10 @@ definePageMeta({
   layout: 'orange',
   middleware: [
     function defineNuxtRouteMiddleware(to, from) {
-      console.log('to', to)
-      console.log('from', from)
+      // console.log('to', to)
+      // console.log('from', from)
     },
-    'auth'
+    // 'auth'
   ]
 })
 const navigate = () => {
