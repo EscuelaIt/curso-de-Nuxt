@@ -1,5 +1,12 @@
 <script setup>
+// const page = ref(1)
+// const { data: users, refresh: refreshUsers } = await useFetch(`https://jsonplaceholder.typicode.com/users?page=${page.value}`)
 const { data: users } = await useFetch('https://jsonplaceholder.typicode.com/users')
+
+// const next = () => {
+//   page.value++
+//   refresh()
+// }
 </script>
 
 <template>

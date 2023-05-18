@@ -7,7 +7,11 @@ definePageMeta({
   }
 })
 
-const { data: post } = await useFetch(`https://jsonplaceholder.typicode.com/posts/${route.params.id}`)
+const { data: post } = await useFetch(`https://jsonplaceholder.typicode.com/posts/${route.params.id}`, {
+  pick: ['title', 'body']
+})
+
+console.log(post.value)
 </script>
 
 <template>

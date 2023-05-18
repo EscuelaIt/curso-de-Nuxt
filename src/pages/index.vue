@@ -1,5 +1,8 @@
 <script setup>
 const show = ref(false)
+const nuxtApp = useNuxtApp()
+
+console.log(nuxtApp)
 
 const Checkbox = resolveComponent('Checkbox')
 const MyComponent = resolveComponent('UiMyComponent')
@@ -19,6 +22,10 @@ const MyComponent = resolveComponent('UiMyComponent')
     <DevOnly>
       Version: 1.0.0
     </DevOnly>
+
+    <hr>
+
+    <p>{{ $dayjs().dayOfYear() }}</p>
 
   </section>
 </template>
