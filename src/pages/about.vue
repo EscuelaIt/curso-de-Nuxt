@@ -9,6 +9,9 @@ definePageMeta({
     // 'auth'
   ]
 })
+const user = useState('user')
+const name = useName()
+
 const navigate = () => {
   navigateTo({ path: '/about/about1', params: { user: 1 }})
 }
@@ -18,6 +21,9 @@ const changeLayout = () => {
 </script>
 
 <template>
+  <p>{{ user }}</p>
+  <p>{{ name }}</p>
+
   <h1 class="font-bold text-2xl">About Page</h1>
   <NuxtLink to="/about/about1">About 1</NuxtLink>
   <NuxtLink to="/about/about2">About 2</NuxtLink>
