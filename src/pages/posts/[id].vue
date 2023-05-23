@@ -11,7 +11,14 @@ const { data: post } = await useFetch(`https://jsonplaceholder.typicode.com/post
   pick: ['title', 'body']
 })
 
-console.log(post.value)
+useHead({
+  title: () => post.value.title
+})
+
+useSeoMeta({
+  ogImage: () => post.value.image
+})
+
 </script>
 
 <template>

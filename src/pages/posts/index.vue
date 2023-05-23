@@ -5,7 +5,6 @@ const { data: posts } = await useFetch('https://jsonplaceholder.typicode.com/pos
     name: post.title
   }))
 })
-console.log(posts.value)
 </script>
 
 <template>

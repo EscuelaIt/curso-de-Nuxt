@@ -9,6 +9,21 @@ definePageMeta({
     // 'auth'
   ]
 })
+
+const description = ref('This is about page')
+
+const postName = 'Title post'
+useHead({
+  title: 'Blog EscuelaIT',
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${postName} - ${titleChunk}` : 'Site Title'
+  }
+})
+
+useSeoMeta({
+  description: () => description.value
+})
+
 const user = useState('user')
 const name = useName()
 
@@ -21,10 +36,15 @@ const changeLayout = () => {
 </script>
 
 <template>
+  <!-- <Head>
+    <Title>About Page SEO</Title>
+    <Meta name="description" content="This is about page SEO"/>
+  </Head> -->
+
   <p>{{ user }}</p>
   <p>{{ name }}</p>
 
-  <h1 class="font-bold text-2xl">About Page</h1>
+  <h1 class="font-bold text-2xl block" @click="description = 'He hecho click en el titulo'">About Page</h1>
   <NuxtLink to="/about/about1">About 1</NuxtLink>
   <NuxtLink to="/about/about2">About 2</NuxtLink>
 

@@ -20,6 +20,16 @@ export default defineNuxtConfig({
   ],
   app: {
     // pageTransition: { name: 'page', mode: 'out-in' }
-    layoutTransition: { name: 'page', mode: 'out-in' }
+    layoutTransition: { name: 'page', mode: 'out-in' },
+    head: {
+      title: 'Blog Nuxt 3',
+      charset: 'utf-8',
+      meta: [
+        { name: 'description', content: 'Un blog con Nuxt 3' }
+      ],
+    }
+  },
+  routeRules: {
+    '/users/**': { ssr: false },
   }
 })

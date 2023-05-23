@@ -4,6 +4,12 @@
 //     return /^\d+$/.test(route.params.id)
 //   }
 // })
+
+useHead({
+  titleTemplate: (titleChunk) => {
+    return `${titleChunk} - Local Articles`
+  }
+})
 </script>
 
 <template>
